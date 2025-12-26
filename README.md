@@ -1,48 +1,55 @@
 
 
-# 🎮 Jogo da Velha vs Robô
 
-Projeto de Jogo da Velha desenvolvido com **HTML, CSS e JavaScript puro**, onde o jogador enfrenta um robô em turnos alternados.
+🎮 Jogo da Velha Pro
 
-O foco do projeto foi praticar **lógica de programação**, **manipulação do DOM**, **controle de estado** e **experiência do usuário**.
+Um Jogo da Velha moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript puro. O projeto conta com um sistema de Ranking, níveis de dificuldade para o Robô e modo local para 2 Jogadores.
 
----
 
-## 🚀 Funcionalidades
+✨ Funcionalidades
+🤖 Jogador vs Robô: Enfrente uma inteligência artificial com 3 níveis de dificuldade (Fácil, Médio e Imbatível).
 
-- ✅ Jogador vs Robô 🤖  
-- ✅ Controle de turnos (não permite jogar duas vezes seguidas)  
-- ✅ Robô com jogada automática e atraso de 1 segundo  
-- ✅ Placar persistente (vitórias e empates salvos no navegador)  
-- ✅ Contador de empates  
-- ✅ Animação no placar ao atualizar  
-- ✅ Interface responsiva (desktop e celular)  
-- ✅ Tema visual moderno em tons de azul  
+👥 Modo 2 Jogadores: Jogue localmente com um amigo.
 
----
+🏆 Sistema de Ranking: O placar de vitórias totais é salvo permanentemente no seu navegador (LocalStorage).
 
-## 🛠️ Tecnologias Utilizadas
+🎵 Áudio Imersivo: Música de fundo relaxante e efeitos sonoros para as jogadas e vitória.
 
-- **HTML5** – estrutura da aplicação  
-- **CSS3** – layout, responsividade e animações  
-- **JavaScript** – lógica do jogo, eventos, controle de estado e `localStorage`  
+📱 Design Responsivo: Interface otimizada para computadores, tablets e smartphones.
 
----
+🛠️ Tecnologias Utilizadas
+HTML5: Estrutura semântica e elementos de áudio.
 
-## 📂 Estrutura do Projeto
+CSS3: Layout moderno com Flexbox, CSS Grid, gradientes e animações.
 
-``text
-/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
----
+JavaScript (ES6+): Lógica do jogo, IA com estratégia de cantos/centro e persistência de dados.
 
-## Como executar
+📁 Estrutura do Projeto
+Plaintext
 
-Clone o repositório
+jogodavelha/
+├── index.html        # Estrutura principal do jogo
+├── style.css         # Estilização e design responsivo
+├── script.js        # Lógica, IA e controle de áudio
+└── sounds/           # Pasta para arquivos de áudio
+    ├── fundo.mp3     # Música de fundo (Loop)
+    ├── x.mp3         # Som da jogada do X
+    ├── o.mp3         # Som da jogada do O
+    └── vitoria.mp3   # Som de celebração ao vencer
+🚀 Como Executar
+Faça o download ou clone este repositório.
 
-Abra o arquivo index.html no navegador
+Certifique-se de que os arquivos de som estão dentro da pasta sounds/ com os nomes corretos.
 
-Comece a jogar !!
+Abra o arquivo index.html em qualquer navegador moderno.
+
+Nota sobre áudio: Devido às políticas dos navegadores, a música de fundo começará a tocar assim que você clicar em qualquer lugar da tela (ou fizer a sua primeira jogada).
+
+🧠 Inteligência do Robô
+A dificuldade do robô foi programada da seguinte forma:
+
+Fácil: Escolhe posições de forma totalmente aleatória.
+
+Médio: Tenta vencer se tiver a chance e bloqueia o jogador, mas comete erros ocasionais.
+
+Expert: Utiliza uma lógica de prioridades (Vencer > Bloquear > Ocupar Centro > Ocupar Cantos).
