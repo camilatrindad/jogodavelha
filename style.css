@@ -14,7 +14,7 @@ body {
   padding: 20px;
 }
 
-/* Container Principal */
+
 .container {
   background: rgba(10, 25, 47, 0.95);
   border-radius: 28px;
@@ -34,7 +34,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* --- DESTAQUE: CONTROLES DE MODO E DIFICULDADE --- */
+
 .controles-grupo {
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ select:hover {
   background: #244a76;
 }
 
-/* --- DESTAQUE: RANKING GLOBAL --- */
+
 .ranking-container {
   background: linear-gradient(145deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
   border: 1px solid #ffd700;
@@ -93,7 +93,7 @@ select:hover {
   display: block;
 }
 
-/* --- MENSAGENS E FEEDBACK --- */
+
 #mensagem {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -111,7 +111,7 @@ select:hover {
   50% { opacity: 0.5; }
 }
 
-/* --- TABULEIRO --- */
+
 .tabuleiro {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -141,7 +141,7 @@ select:hover {
 .casa.x { color: #74b9ff; text-shadow: 0 0 15px #74b9ff; }
 .casa.o { color: #55efc4; text-shadow: 0 0 15px #55efc4; }
 
-/* --- PLACAR DA SESSÃO --- */
+
 .placar {
   display: flex;
   justify-content: space-between;
@@ -182,7 +182,7 @@ select:hover {
   background: #30b5d6;
 }
 
-/* Responsividade */
+
 @media (max-width: 400px) {
   .container { padding: 20px; }
   .casa { font-size: 2.2rem; }
