@@ -39,7 +39,7 @@ jogodavelha/
 🚀 Como Executar
 Faça o download ou clone este repositório.
 
-Certifique-se de que os arquivos de som estão dentro da pasta sounds/ com os nomes corretos.
+Certifique-se de que os arquivos de som estão dentro da pasta audio/ com os nomes corretos.
 
 Abra o arquivo index.html em qualquer navegador moderno.
 
